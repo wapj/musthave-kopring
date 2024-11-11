@@ -11,4 +11,9 @@ management:
     health:
       show-details: always
 
-debug: true
+#debug: true
+
+example:
+  message:
+    prefix: ">>> "
+    text: "Hello, Auto Configuration!"
