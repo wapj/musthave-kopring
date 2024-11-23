@@ -17,3 +17,9 @@ example:
   message:
     prefix: ">>> "
     text: "Hello, Auto Configuration!"
+
+info:
+  app:
+    name: 앤디북스
+    version: 0.1.0
+    description: 책 관리 서비스를 제공하는 앤디 북스입니다.
