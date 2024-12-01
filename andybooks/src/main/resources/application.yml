@@ -23,3 +23,28 @@ info:
     name: 앤디북스
     version: 0.1.0
     description: 책 관리 서비스를 제공하는 앤디 북스입니다.
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+server:
+  port: 8080
+
+---
+spring:
+  config:
+    activate:
+      on-profile: qa
+server:
+  port: 8081
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+server:
+  port: 8082

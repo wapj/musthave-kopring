@@ -18,7 +18,7 @@ class AndybooksApplication(val environment: Environment) {
 		print("앱 이름 : $appName\n")
 		print("앱 버전 : $appVersion\n")
 		print("앱 설명 : $appDescription\n")
-		print("현재 활성화 된 프로필 : ${environment.activeProfiles.joinToString()}\n")
+		print("현재 활성화 된 프로파일 : ${environment.activeProfiles.joinToString()}\n")
 	}
 }
 
