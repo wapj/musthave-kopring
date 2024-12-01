@@ -4,7 +4,30 @@ import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.context.annotation.Bean
+import org.springframework.context.annotation.Profile
 import org.springframework.core.env.Environment
+import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RestController
+
+
+@Profile("!prod")
+@RestController
+class Hello() {
+	@RequestMapping("/")
+	fun home():String {
+		return "스프링 부트 재밌죠? "
+	}
+}
+
+@Profile("prod")
+@RestController
+class ProdHello() {
+	@RequestMapping("/")
+	fun home():String {
+		return "운영환경입니다."
+	}
+}
+
 
 @SpringBootApplication
 class AndybooksApplication(val environment: Environment) {

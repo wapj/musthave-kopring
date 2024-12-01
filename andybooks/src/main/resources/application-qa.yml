@@ -1,0 +1,6 @@
+spring:
+  config:
+    activate:
+      on-profile: qa
+server:
+  port: 8081
